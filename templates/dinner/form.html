@@ -1,0 +1,36 @@
+${header}
+<html lang="en">
+	<body class="container">
+		<form method="POST">
+			<div class="form-group">
+				<label for="exampleInputEmail1">Dinner Item</label>
+				<input
+					name="name"
+					type="text"
+					class="form-control"
+					id="exampleInputEmail1"
+					aria-describedby="emailHelp"
+					placeholder="Enter an Entree"
+				/>
+			</div>
+			<div class="form-group">
+				<label class="mr-sm-2" for="inlineFormCustomSelect">Preference</label>
+				<select
+					name="rating"
+					class="custom-select mr-sm-2"
+					id="inlineFormCustomSelect"
+				>
+					<option selected>Choose...</option>
+					<option value="1">One</option>
+					<option value="2">Two</option>
+					<option value="3">Three</option>
+					<option value="4">Four</option>
+					<option value="5">Five</option>
+				</select>
+			</div>
+
+			<button type="submit" class="btn btn-primary">Submit</button>
+		</form>
+	</body>
+</html>
+${footer}

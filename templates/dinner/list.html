@@ -1,0 +1,21 @@
+${header}
+<html lang="en">
+	<body class="container">
+		<h1>Dinner List</h1>
+		<a href="/members-only">Back</a>
+		<br />
+		<a href="/dinners/new">Add Dinner</a>
+		<ul>
+			${dinners.map(d => `
+			<li>
+				<form method="POST" action="/dinners/${d.id}/delete">
+					<a href="/dinners/${d.id}/edit">${d.name} - ${d.rating}</a>
+					<input type="submit" value="X" />
+				</form>
+			</li>
+			`).join("")}
+		</ul>
+	</body>
+</html>
+
+${footer}
